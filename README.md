@@ -3,6 +3,7 @@
 *Formação de 21 horas, que foi abordado os seguintes tópicos/vídeos:*
 
 Primeiros Passos com o HTML
+
     .Entendendo a Comunicação Client  Server
         . História da WEB
         . O que são Clientes
@@ -13,7 +14,7 @@ Primeiros Passos com o HTML
         .Ferramentas utilizadas
         . Inspetor de Elementos
         . Estrutura Básica do HTML
-        
+
 
 HTML: Conceitos Básicos
 

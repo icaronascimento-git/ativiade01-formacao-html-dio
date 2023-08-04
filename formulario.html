@@ -18,7 +18,8 @@
         <li>- Os atríbutos iniciados com "ON" são chamados de eventos, usados em conjunto com o JavaScript</li>
         <li>- Em campos do tipo number pode-se usa o atributo "min" e "max" para informar um valor minimo ou maxímo permitido naquele campo</li>
         <li>- No campo "number" pode-se também utilizar o atributo "STEP", ele fará subir ou diminuir uma valor especifico (ex: 5 em 5) quando clicar na seta do campo</li>
-        <li></li>
+        <li>- No imput do tipo "CHECKBOX", é recomendado inserir o mesmo valor no atributo name de todos e ao final do valor, colocar"[]" para informar ao back-end que se trata de uma lista. 
+            Se não informar o [] ao final do atributo name, pode ser que o back-end entenda que não seja uma lista e pegue o último valor marcado e substitua os demais.</li>
         <li></li>
     
     
@@ -36,6 +37,25 @@
         <label for="text">Date:</label><input type="date" name="data" id="data"><br>
         <label for="text">File</label><input type="file" name="file" id="file" multiple><br>
         <button type="submit">Enviar!</button>
+
+        <!-- AULA CHECKBOX E RADION BUTTON -->
+        <h3>Você selecionou: Pizza Calabresa</h3>
+        <p>Quais adicionais você deseja?</p>
+        <input type="checkbox" name="opcional[]" id="queijo" value="Queijo"> + Queijo <br>
+        <input type="checkbox" name="opcional[]" id="" value="Calabresa"> + Calabresa <br>
+        <input type="checkbox" name="opcional[]" id="" value="Cebola"> + Cebola <br>
+        <input type="checkbox" name="opcional[]" id="" value="Azeitona"> + Azeitona <br> 
+        <p>Borda Recheada?</p>
+        <input type="radio" name="borda" id="" value="Sim">Sim <br>
+        <input type="radio" name="borda" id="" value="não">Não <br>
+        <p>Bebida?</p>
+        <input type="checkbox" name="bebida[]" id="" value="Suco">Suco
+        <input type="checkbox" name="bebida[]" id="" value="Refrigerante">Refrigerante
+        <input type="checkbox" name="bebida[]" id="" value="Água">Água
+        <input type="checkbox" name="bebida[]" id="" value="Nenhum">Nenhum <br>
+        <button type="submit">Enviar pedido</button>
+
+
 
     </form>
 </body>

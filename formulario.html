@@ -16,17 +16,25 @@
         <li>- O atributo autocomplete ON/OFF do form indica se desejamos que ao acessar a página novamente, os dados quer
             inserimos nos campos do form em outro momento, sejam "lembrados" e o navegador sugira o auto preenchimento. </li>
         <li>- Os atríbutos iniciados com "ON" são chamados de eventos, usados em conjunto com o JavaScript</li>
-        <li></li>
-        <li></li>
+        <li>- Em campos do tipo number pode-se usa o atributo "min" e "max" para informar um valor minimo ou maxímo permitido naquele campo</li>
+        <li>- No campo "number" pode-se também utilizar o atributo "STEP", ele fará subir ou diminuir uma valor especifico (ex: 5 em 5) quando clicar na seta do campo</li>
         <li></li>
         <li></li>
     
     
     </ul>
     <form name="Cadastre usuary" autocomplete="on" onsubmit="alert('Cadastro permitido apenas para idades a partir de 16 anos')" action="#">
-        Nome: <input type="text" name="name">
-        Idade: <input type="number" name="age">
-        Senha: <input type="password" name="password">
+        Nome: <input type="text" name="name"><br>
+        Idade: <input type="number" name="age"><br>
+        Senha: <input type="password" name="password"><br>
+        <label for="text">Informe seu nome completo:</label><input type="text" name="Nome Completo" id="nome-completo"><br>
+        <label for="number">Informe sua Idade:</label><input type="number" name="Idade" min="0" max="99" step="5" id="Idade"><br>
+        <label for="number">Range:</label><input type="range" name="" id="" min="0" max="99"><br>
+        <label for="text">Color</label><input type="color" name="color" id="color"><br>
+        <label for="text">E-mail</label><input type="email" name="email" id="email"><br>
+        <label for="text">URL:</label><input type="url" name="url" id="url"><br>
+        <label for="text">Date:</label><input type="date" name="data" id="data"><br>
+        <label for="text">File</label><input type="file" name="file" id="file" multiple><br>
         <button type="submit">Enviar!</button>
 
     </form>
